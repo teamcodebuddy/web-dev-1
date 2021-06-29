@@ -1,8 +1,78 @@
-body {
-  background-color: lightblue;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+container {
+  padding: 0%;
+  margin: 0%;
+}
+
+.nav { 
+  background: #000;
+  height: 100px; 
+  width: 100%;
+  top: 0px
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  padding: 0;
+  top: 0px
+}
+
+.nav ul li {
+  color: red;
+  display: inline-block; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 10px 10px;
+}
+
+.nav ul li:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+.footer { 
+  background: #000;
+  height: 80px; 
+  padding-bottom: 50px;
+}
+
+.footer p { 
+  color: #fff;
+  font-size: 14px;  
+  height: 80px; 
+  line-height: 80px;
+  margin: 0;  
+}
+
+.jumbotron {
+  background: url(/images/dog.jpg);
+  background-size: cover;
+  height: 600px; 
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 220px;
+}
+
+.jumbotron h2 {
+  color: #fff;
+  text-align: left; 
+}
+
+.jumbotron p {
+  color: #fff; 
+  text-align: right; 
 }
