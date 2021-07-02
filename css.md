@@ -1,4 +1,4 @@
-# Lesson 3: CSS
+# CSS
 
 ## Warmup
 
@@ -130,46 +130,254 @@ The `<div>` tag is the most common way web designers _divide_ their HTML element
 </div>
 ```
 
-Now, add the following code to your css file, one at a time. 
+---
+
+Now, add the following code to your css file, and hit run. 
 
 ```css
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
 .container {
-  margin: 0 auto;
-  max-width: 940px; 
-  padding: 0 10px;
+  padding: 10px 10px;
 }
 
 .nav { 
   background: #000;
-  height: 80px; 
   width: 100%;
 }
 
 .nav ul {
-  height: 80px;
   list-style: none;
-  margin: 0 auto; 
   padding: 0;
 }
 
 .nav ul li {
-  color: #fff;
+  color: red;
   display: inline-block; 
-  height: 80px;
-  line-height: 80px; 
   list-style: none;
-  padding: 0 10px;
-  transition: background .5s; 
+  padding: 10px 10px;
 }
 
-nav ul li:hover {
+.nav ul li:hover {
   background: #117bff;
   cursor: pointer; 
   transition: background .5s;  
 }
 
 ```
+
+## What's going on? 
+
+Lets take a deeper look at the CSS we added to the style sheet.  
+
+#### Multiple selectors
+
+```css
+html, body {
+  margin: 0;
+  padding: 0;
+}
+```
+
+In the above block, you see two selectors, separated by a comma. 
+
+This means that the block applies to all content inside **BOTH** `html` **AND** `body` tags. 
+
+---
+
+#### Class vs Element selectors
+
+```css
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  padding: 10px 10px;
+}
+```
+
+You might notice that `body` has no period in front of it while `.container` does. 
+
+* No period in front of selector means it is an **element selector**. 
+
+* The period in front of the selector means it is a **class selector**. 
+
+So, 
+
+```css
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+```
+
+Applies to all the content inside the body element
+
+```html 
+<body>
+  ...
+</body>
+```
+
+While 
+
+```css
+.container {
+  padding: 10px 10px;
+}
+```
+
+Applies to all content in between this container div. 
+
+```html 
+<div class="container">
+  ...
+</div>
+```
+
+---
+
+#### Margin and Padding 
+
+You might be wondering, _what the heck is margin and padding?_
+
+![Margin](../images/margin.png)
+
+As you can see when you create an html element, the stuff inside the tags is called the **content**. 
+
+* **Padding** is the area (typically measured in pixels) outside the content but _within_ the element. 
+
+* **Margin** is the area (also measured in pixels) _outside_ the element
+
+You can customize the margin and padding on the **top**, **bottom**, **left**, and **right** of an HTML element. You can do this 2 ways: 
+
+```css
+.container {
+  padding-top: 10px;
+  padding-right: 8px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+}
+```
+
+OR you can right it **shorthand** 
+
+```css
+.container {
+  padding: 10px 8px 6px 5px;
+}
+```
+
+_If you are writing your margin and padding shorthand..._
+
+
+1. And you only provide 3 values, the `top` margin is given the first value, the `left` and `right` margins are given the second value, and the `bottom` margin is given the third value. 
+
+1. And you only provide 2 values, the `top` and `bottom` margins are given the first value, and the `right` and `left` magins are given the second value. 
+
+1. And you only provide 1 value, `top`, `bottom`, `right`, and `left` margins are all given the same value. 
+
+**DO NOW**: Interpret the following declaration blocks: 
+
+```css
+
+.header {
+  padding: 10px 10px;
+  margin: 5px
+}
+
+.footer { 
+  padding: 5px 10px 10px;
+  margin: 0px 15px;
+}
+
+.main {
+  padding: 20px;
+  margin: 0px;
+}
+```
+
+You can edit the margin in the same way that you edit the padding.  
+
+
+**DO NOW**: Play with the margin and padding for the `container` declaration. 
+
+---
+
+#### Descendent selectors 
+
+```css
+
+.nav { 
+  background: #000;
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul li {
+  color: red;
+  display: inline-block; 
+  list-style: none;
+  padding: 10px 10px;
+}
+
+```
+
+If you add a space between two selectors in the same declaration block, you will create a descendant selector. 
+
+This means that the style will be applied to elements that are _children_ of the element on the left. 
+
+So, the first block applies to 
+
+```html 
+<div class="nav">
+  ...
+<div>
+```
+
+The second block only applies to 
+
+```html 
+<div class="nav">
+  <ul>
+    ...
+  </ul>
+<div>
+```
+
+And the third block applies to 
+
+```html 
+<div class="nav">
+  <ul>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+  </ul>
+<div>
+```
+
+** DO NOW:** Play around with the declarations in your descendant selectors to see how your navbar is edited!
+
+---
 
 ### Creating a Footer 
 

@@ -1,4 +1,4 @@
-# Lesson 1: Intro to Web Development 
+# Intro to Web Development 
 
 In this course we will learn how to build a web page from scratch!
 

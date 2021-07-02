@@ -1,17 +1,19 @@
-# Lesson 2: More HTML, and CSS 
+# More HTML, Github, and CSS 
 
 ## Warmup 
 
 1. What happens when you type `www.replit.com` in your browser and you hit enter?
 1. What are the 3 langauges needed to render a webpage in your browser? 
 
-## Creating a Github Profile: 
+## Creating a Github Account: 
 
 Before we get started, we are going to create a github so that we can store and share our code somewhere other than repl. 
 
 Sign-up link: https://github.com/signup?source=login
 
 Store your username and password somewhere safe.
+
+Once you are done watch the following video explaining what Github is: https://www.youtube.com/watch?v=w3jLJU7DT5E
 
 ## HTML Review 
 

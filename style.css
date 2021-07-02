@@ -4,34 +4,27 @@ html, body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 2;
 }
 
-container {
-  padding: 0%;
-  margin: 0%;
+.container {
+  padding: 10px 10px;
 }
 
 .nav { 
-  background: #000;
-  height: 100px; 
+  background: beige;
   width: 100%;
-  top: 0px
 }
 
 .nav ul {
-  height: 80px;
   list-style: none;
   padding: 0;
-  top: 0px
 }
 
 .nav ul li {
   color: red;
   display: inline-block; 
-  height: 80px;
-  line-height: 80px; 
   list-style: none;
   padding: 10px 10px;
 }
@@ -43,17 +36,14 @@ container {
 }
 
 .footer { 
-  background: #000;
-  height: 80px; 
-  padding-bottom: 50px;
+  background: beige;
+  padding: 20px 20px;
 }
 
 .footer p { 
-  color: #fff;
-  font-size: 14px;  
-  height: 80px; 
-  line-height: 80px;
-  margin: 0;  
+  color: black;
+  font-size: 14px; 
+  text-align: center;
 }
 
 .jumbotron {
