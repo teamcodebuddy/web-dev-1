@@ -4,35 +4,37 @@ html, body {
 }
 
 body {
-  font-family: 'Gill Sans', sans-serif;
-  font-weight: 2;
+  font-family: sans-serif;
+  font-size: 14;
 }
 
 .container {
-  padding: 10px 10px;
+  padding: 0px 0px;
 }
 
 .nav { 
-  background: beige;
+  background: transparent;
   width: 100%;
+  position: fixed;
 }
 
 .nav ul {
+  text-align: right;
   list-style: none;
   padding: 0;
 }
 
-.nav ul li {
+.nav ul li {  
   color: red;
-  display: inline-block; 
-  list-style: none;
-  padding: 10px 10px;
+  display: inline-flex; 
+  font-size: 20;
+  padding: 0px 5% 0px;
 }
 
 .nav ul li:hover {
-  background: #117bff;
   cursor: pointer; 
-  transition: background .5s;  
+  transition: background .5s;
+  font-weight: 900;  
 }
 
 .footer { 
@@ -47,17 +49,27 @@ body {
 }
 
 .jumbotron {
-  background: url(/images/dog.jpg);
   background-size: cover;
-  height: 600px; 
+  height: 800px; 
 }
 
-.jumbotron .container {
-  position: relative;
-  top: 220px;
+.jumbotron.goldengate {
+  background-image: url('images/goldengate.jpg');
+}
+.jumbotron.italy {
+  background-image: url('images/italy.jpg');
+}
+.jumbotron.space {
+  background-image: url('images/space.jpg');
+}
+.jumbotron.pfieffer {
+  background-image: url('images/pfieffer.jpg');
+}
+.jumbotron.colors {
+  background-image: url('images/colors.jpg');
 }
 
-.jumbotron h2 {
+.jumbotron h1 {
   color: #fff;
   text-align: left; 
 }
@@ -65,4 +77,18 @@ body {
 .jumbotron p {
   color: #fff; 
   text-align: right; 
+}
+
+#goldengate {
+  background: url('images/goldengate.jpg');
+}
+
+#italy {
+  background: url('space/goldengate.jpg');
+}
+#colors {
+  background: url('space/goldengate.jpg');
+}
+#pfieffer {
+  background: url('space/goldengate.jpg');
 }
