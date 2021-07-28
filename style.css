@@ -1,15 +1,26 @@
 html, body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-  font-family: sans-serif;
-  font-size: 14;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
 }
 
-.container {
-  padding: 0px 0px;
+.title {
+  padding: 10% 5% 1%;
+  margin: 0px;
+  text-align: left;
+  font-size: x-large;
+}
+
+.subtitle {
+  padding: 0% 5%;
+  margin: 0px;
+  text-align: left;
+  font-size: large;
+  color: #fff; 
 }
 
 .nav { 
@@ -25,21 +36,25 @@ body {
 }
 
 .nav ul li {  
-  color: red;
   display: inline-flex; 
-  font-size: 20;
-  padding: 0px 5% 0px;
+  padding: 0px 2% 0px;
+}
+
+.nav ul li a {  
+  color: white;
+  font-size: x-large;
+  text-decoration: none
 }
 
 .nav ul li:hover {
   cursor: pointer; 
-  transition: background .5s;
-  font-weight: 900;  
+  font-weight: bold;  
 }
 
 .footer { 
-  background: beige;
+  background-color: beige;
   padding: 20px 20px;
+  height: 50px;
 }
 
 .footer p { 
@@ -50,7 +65,7 @@ body {
 
 .jumbotron {
   background-size: cover;
-  height: 800px; 
+  height: 100vh;
 }
 
 .jumbotron.goldengate {
@@ -65,30 +80,50 @@ body {
 .jumbotron.pfieffer {
   background-image: url('images/pfieffer.jpg');
 }
-.jumbotron.colors {
-  background-image: url('images/colors.jpg');
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 500;
+ color: #fff;
+ margin: 0px;
 }
 
-.jumbotron h1 {
-  color: #fff;
-  text-align: left; 
+.main {
+  padding: 10px;
 }
 
-.jumbotron p {
-  color: #fff; 
-  text-align: right; 
+.main::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#goldengate {
-  background: url('images/goldengate.jpg');
+.main h1{
+  color: black;
 }
 
-#italy {
-  background: url('space/goldengate.jpg');
+.blog-item {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 10px 0px;
+  margin-bottom: 20px;
 }
-#colors {
-  background: url('space/goldengate.jpg');
+
+.blog-item img {
+  height: 200px;
+  width: 200px;
 }
-#pfieffer {
-  background: url('space/goldengate.jpg');
+
+.blog-item h2{
+  color: black;
 }
+
+.blog-item a {
+  font-size: small;
+}
+
+.blog-item p {
+  font-size: small;
+}
+
+

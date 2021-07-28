@@ -1,7 +1,8 @@
 # Intro to Web Development 
 
-In this course we will learn how to build a web page from scratch!
+Link: https://meet.google.com/dur-zfij-xpv
 
+In this course we will learn how to build a web page from scratch!
 
 Before we dive in, let's learn how webpages work. 
 
